@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bon Voyage</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+  <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
+
+  <header>
+    <nav class="navbar">
+      <div class="img"><svg viewBox="0 0 1600 1600" width="100" class="plane">
+          <path
+            d="M624 448H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h608c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM80.55 341.27c6.28 6.84 15.1 10.72 24.33 10.71l130.54-.18a65.62 65.62 0 0 0 29.64-7.12l290.96-147.65c26.74-13.57 50.71-32.94 67.02-58.31 18.31-28.48 20.3-49.09 13.07-63.65-7.21-14.57-24.74-25.27-58.25-27.45-29.85-1.94-59.54 5.92-86.28 19.48l-98.51 49.99-218.7-82.06a17.799 17.799 0 0 0-18-1.11L90.62 67.29c-10.67 5.41-13.25 19.65-5.17 28.53l156.22 98.1-103.21 52.38-72.35-36.47a17.804 17.804 0 0 0-16.07.02L9.91 230.22c-10.44 5.3-13.19 19.12-5.57 28.08l76.21 82.97z" />
+        </svg></div>
+      <div class="text">
+        <p>BON</p>
+        <p>VOYAGE</p>
+      </div>
+      <ul>
+        <b>
+          <li><a href="login.html" target="_self" class="nav"> Log in </a></li>
+          <li><a href="holiday.html" target="_self" class="nav"> Holiday Packages </a></li>
+          <li><a href="index.html" target="_self" class="p"> Home </a></li>
+          <li></li>
+        </b>
+      </ul>
+    </nav>
+  </header>
+
+  <!--CLOUD CLASS STARTS-->
+
+  <div class="scrollDist"></div>
+  <div class="main">
+    <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+      <mask id="m">
+        <g class="cloud1">
+          <rect fill="#fff" width="100%" height="801" y="799"></rect>
+          <image href="https://assets.codepen.io/721952/cloud1Mask.jpg" width="1200" height="800"></image>
+        </g>
+      </mask>
+
+      <image class="sky" href="https://assets.codepen.io/721952/sky.jpg" width="1200" height="590"></image>
+      <image class="mountBg" href="https://assets.codepen.io/721952/mountBg.png" width="1200" height="800"></image>
+      <image class="mountMg" href="https://assets.codepen.io/721952/mountMg.png" width="1200" height="800"></image>
+      <image class="cloud2" href="https://assets.codepen.io/721952/cloud2.png" width="1200" height="800"></image>
+      <image class="mountFg" href="https://assets.codepen.io/721952/mountFg.png" width="1200" height="800"></image>
+      <image class="cloud1" href="https://assets.codepen.io/721952/cloud1.png" width="1200" height="800"></image>
+      <image class="cloud3" href="https://assets.codepen.io/721952/cloud3.png" width="1200" height="800"></image>
+      <text fill="#fff" x="350" y="200">EXPLORE</text>
+      <polyline class="arrow" fill="#fff"
+        points="599,250 599,289 590,279 590,282 600,292 610,282 610,279 601,289 601,250"></polyline>
+
+      <g mask="url(#m)">
+        <rect fill="#fff" width="100%" height="100%"></rect>
+        <text x="100" y="200" fill="#162a43">
+          <tspan x="160" dx="0.5em">THE WONDERS</tspan>
+          <tspan dy="1.2em" x="200">OF THE WORLD</tspan>
+        </text>
+        <text x="880" y="380" class="with">WITH US!</text>
+        <svg class="redirect" x="50%" y="80" viewBox="0 0 1400 1600" width="100" title="arrow-right">
+          <path
+            d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
+          </path>
+          <rect rx="10" ry="10" class="arrowBtn2" width="100" height="50" opacity="1" x="47.15%" y="415"
+            style="cursor:pointer"></rect>
+        </svg>
+      </g>
+      <rect id="arrowBtn" width="100" height="100" opacity="0" x="550" y="220" style="cursor:pointer"></rect>
+    </svg>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
